@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments Chapter 7</title>
+</head>
+
+<body>
+
+    <form action="http://www.example.com/login.php">
+
+        <pre>
+
+        <label for="username">Username:</label>        <input type="text" id="username" size="15" maxlength="30" required="required"/>
+        
+        <label for="password">Password:</label>        <input type="password" id="password" size="15" maxlength="30" required="required"/>
+
+        <label for="dob">Date of Birth:</label>   <input type="date" id="dob">
+
+        <label for="password">Web URL:</label>         <input type="url">
+
+        <label for="city">City:</label>            <input list="city" name="city" class="datalist-input" />
+                         <datalist id="city">
+                             <option value="Karachi" />
+                             <option value="Islamabad" />
+                             <option value="Lahore" />
+                             <option value="Faislabad" />
+                             <option value="Rawalpindi" />
+                         </datalist>
+        <label for="state">State:</label>           <input list="state" name="state" class="datalist-input" />
+                        <datalist id="state">
+                            <option value="Sindh" />
+                            <option value="Punjab" />
+                            <option value="Balochistan" />
+                            <option value="KPK" />
+                            <option value="Gilgit Baltistan" />
+                        </datalist>
+        <Label>ZIP Code</Label>         <input type="text" pattern="[0-9]{5}" title="Five digit zip code" />
+
+        <label for="email">Email:</label>           <input type="email" id="email"required="required">
+
+        <label for="number">Add to Cart:</label>     <input type="number" id="number">
+
+        <label for="cars">Choose a car:</label>
+                         <select name="cars" id="cars" size="3" multiple="multiple">
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="opel">Opel</option>
+                              <option value="audi" selected="selected">Audi</option>
+                         </select>
+    
+        <fieldset style="width: 18%; margin-right: 50px;"><legend>Contact details</legend>
+    <label>Email:
+    <input type="text" name="email" /></label><br />
+    <label>Mobile:
+    <input type="text" name="mobile" /></label><br />
+    <label>Telephone:
+    <input type="text" name="telephone" /></label>
+        </fieldset>
+    <label for="comments">Additional Comments:</label>
+    <textarea name="comments" id="comments" cols="20" rows="4">Enter your comments...</textarea>
+
+    <label for="file">Upload your profile picture:</label><input type="file" id="file">
+        
+        <label for="checkbox">I agree to the form Terms and Conditions.</label><input type="checkbox" id="checkbox">
+        
+        <label for="colorpicker">Select your favorite color:</label><input type="color" id="colorpicker" value="#0784E4">
+        
+        <label for="submit">Subscribe Now:</label>
+        <input type="image" id="submit" src="Subscribe.png" alt="button" width="110">
+        
+        <label for="age">Please select your age:</label>
+        <label for="age1">12 - 18</label><input type="radio" id="age1" name="age" value="30"><br>
+        <label for="age2">18 - 25</label><input type="radio" id="age2" name="age" value="60"><br>
+        <label for="age3">25 - 30+</label><input type="radio" id="age3" name="age" value="100">
+
+        <label for="password">Points (between 0 and 10):    </label><input type="range">
+
+        <label for="password">Reset</label>     <input type="reset">
+
+        <label for="password">Submit</label>        <input type="submit">
+
+
+
+    </pre>
+
+    </form>
+
+</body>
+
+</html>
